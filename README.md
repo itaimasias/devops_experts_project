@@ -111,42 +111,6 @@ docker-compose down
 
 ---
 
-# 📤 Publish the Image to Docker Hub
-
-Log in:
-
-```bash
-docker login
-```
-
-Push the image:
-
-```bash
-docker push itaimasias/flask-hello-world:latest
-```
-
-Your public Docker Hub image:  
-👉 https://hub.docker.com/r/itaimasias/flask-hello-world
-
----
-
-# 🧪 Testing the Application
-
-### Browser
-```
-http://localhost:5001
-```
-
-### Curl test
-
-```bash
-curl http://localhost:5001
-```
-
----
-
-# 🧹 Useful Docker Commands
-
 ```bash
 docker ps                # List running containers
 docker ps -a             # List all containers
