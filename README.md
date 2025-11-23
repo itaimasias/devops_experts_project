@@ -158,24 +158,3 @@ docker volume ls         # List volumes
 ```
 
 ---
-
-# ✅ Summary
-
-This project demonstrates essential DevOps workflows:
-
-- Containerizing a Python app  
-- Running with Docker & Compose  
-- Using volumes for persistence  
-- Publishing images to Docker Hub  
-- Writing clear documentation  
-
-The app is now ready for CI/CD pipelines, Kubernetes deployments, or further backend expansion.
-
----
-
-If you want, I can also add:
-🔥 GitHub Actions (CI/CD)  
-🔥 Kubernetes manifests  
-🔥 Helm chart  
-🔥 Automated tests  
-🔥 API extensions  
