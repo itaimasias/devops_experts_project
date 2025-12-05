@@ -159,4 +159,4 @@ kubectl get pods | grep flask-healthcheck
 
 ---
 
-זהו README מלא, מקצועי וברור – מוכן להגשה 👍  
+README documentation created with the assistance of an AI tool.
