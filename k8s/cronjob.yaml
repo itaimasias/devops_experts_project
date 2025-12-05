@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: flask-healthcheck-cron
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: curl-container
+              image: curlimages/curl:8.10.1
+              args:
+                - /bin/sh
+                - -c
+                - |
+                  echo "Running healthcheck at $(date)"
+                  curl -sS http://flask-service:5000/ || echo "Flask service is not responding"
+
